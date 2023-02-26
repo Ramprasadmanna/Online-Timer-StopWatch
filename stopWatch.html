@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/Timer.png">
+
+    <!-- Document Name -->
+    <title>Stop Watch</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="stopWatch.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/29c9f6d431.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>STOP WATCH</h1>
+    <div class="clock">
+        <div class="min">
+            <h3 id="min">00</h3>
+        </div>
+        <h3 class="divide">:</h3>
+        <div class="sec">
+            <h3 id="sec">00</h3>
+        </div>
+        <h3 class="divide">.</h3>
+        <div class="msec">
+            <h3 id="msec">00</h3>
+        </div>
+    </div>
+    <button class="btn start toggle" id="Start">Start</button>
+    <button class="btn stop toggle" id="Stop">Stop</button>
+    <button class="btn restart" id="Restart">Restart</button>
+    <button class="btn lap-btn" id="Lap">Lap</button>
+    <button class="btn copy-btn" id="Copy"><i class="fa-regular fa-copy"></i></button>
+
+    <table>
+        <tr class="Heading">
+            <th>Lap</th>
+            <th>Note</th>
+            <th>Lap times</th>
+            <th>Overall time</th>
+            <th>Remove</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td>99:99:99</td>
+            <td>99:99:99</td>
+            <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+        </tr>
+    </table>
+
+    <footer class="copyright">
+        <p><a href="https://github.com/Ramprasadmanna" target="_blank">© Ramprasad Manna</a>
+        </p>
+    </footer>
+
+    <script src="stopWatch.js"></script>
+</body>
+
+</html>

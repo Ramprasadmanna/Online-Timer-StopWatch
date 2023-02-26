@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------Pre Defined--------------------- */
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.bg {
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+/* -----------------------Main Css----------------------- */
+
+body {
+    background-color: #152238;
+    text-align: center;
+    color: #ffff;
+    user-select: none;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 550px;
+    margin: 0 auto;
+}
+
+/* ------------------Header Name Start------------------ */
+h1 {
+    font-size: 80px;
+}
+
+/* ------------------Header Name End------------------ */
+
+/* ------------------Clock Name Start------------------ */
+.names-container {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+/* ------------------Clock Name Start------------------ */
+
+/* <!-- Clock Start --> */
+.row {
+    justify-content: space-between;
+}
+
+.row .col {
+    width: 150px;
+}
+
+.increment .col,
+.decrement .col {
+    padding: 10px 0;
+}
+
+.increment .col i,
+.decrement .col i {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.clock .col {
+    font-size: 70px;
+    height: 120px;
+    margin: 20px 0;
+}
+
+.divider {
+    font-size: 60px;
+}
+
+.divider-animation {
+    animation: fade-in-out 1s ease-in-out infinite;
+}
+
+.text-fade {
+    animation: text-fade 0.4s ease-in-out 1;
+}
+
+
+/* ----------------------Clock End---------------------- */
+
+/* --------------------- Clock Range Start --------------------- */
+
+.range-holder {
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.range {
+    background-color: green;
+    width: 100%;
+    border-radius: 3px;
+    height: 10px;
+    transition: width 1s ease, background-color 1s ease;
+}
+
+/* --------------------- Clock Range End --------------------- */
+
+.audiocheckBox {
+    cursor: pointer;
+    gap: 10px;
+    font-size: 20px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.audiocheckBox div {
+    background-color: aliceblue;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    border-radius: 2px;
+    background-color: #152238;
+}
+
+.audiocheckBox div i {
+    color: aliceblue;
+    font-size: 15px;
+    transition: opacity .3s ease;
+}
+
+input[type='checkbox']+label div i {
+    opacity: 0;
+}
+
+input[type='checkbox']:checked+label div i {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.up:hover,
+.down:hover {
+    transition: opacity 1s ease;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.up:active,
+.down:active {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+
+.btn {
+    padding: 5px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 30px 25px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.increment button:disabled,
+.decrement button:disabled {
+    cursor: not-allowed;
+}
+
+.start {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.05);
+    border-color: green;
+    display: none;
+}
+
+.stop {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-color: red;
+    display: none;
+}
+
+.restart {
+    color: white;
+    background-color: rgb(17, 17, 197);
+    border: none;
+}
+
+.pressed {
+    box-shadow: 0 0px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+}
+
+.copyright p:hover {
+    font-weight: 500;
+}
+
+/* ------------------------------ Animations Start ------------------------------ */
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* ------------------------------ Animations End ------------------------------ */
+
+/* ------------------Mobile Responsive------------------ */
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .container {
+        width: calc(100vw - 40px);
+    }
+
+    .names-container {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .row .col {
+        width: 100px;
+    }
+
+    .clock .col {
+        font-size: 50px;
+        height: 100px;
+        margin: 20px 0;
+    }
+
+    .btn {
+        margin: 15px 25px;
+    }
+
+    .copyright {
+        font-size: 18px;
+    }
+}

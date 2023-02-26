@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png">
+
+    <!-- Title -->
+    <title>Web Timer</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/Timer.png" type="">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="timerWatch.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/29c9f6d431.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <!-- Header Name Start -->
+            <h1>TIMER</h1>
+            <!-- Header Name End -->
+            <div class="shadow">
+                <!-- Clock Name Start -->
+                <div class="flex row names-container">
+                    <div class="col">
+                        <p>Hours</p>
+                    </div>
+                    <div class="col">
+                        <p>Minutes</p>
+                    </div>
+                    <div class="col">
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <!-- Clock Name End -->
+
+                <!-- Increment Button Start -->
+                <div class="flex row increment">
+                    <button class="col up bg in-Hrs disp"><i class="fa-solid fa-plus"></i></button>
+                    <button class="col up bg in-Min disp"><i class="fa-solid fa-plus"></i></button>
+                    <button class="col up bg in-Sec disp"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <!-- Increment Button End -->
+
+                <!-- Clock Start -->
+                <div class="flex row clock">
+                    <div class="flex center col min bg">
+                        <h3 id="hrs">00</h3>
+                    </div>
+                    <h3 class="divider">:</h3>
+                    <div class="flex center col sec bg">
+                        <h3 id="min">00</h3>
+                    </div>
+                    <h3 class="divider">:</h3>
+                    <div class="flex center col msec bg">
+                        <h3 id="sec" class="">00</h3>
+                    </div>
+                </div>
+                <!-- Clock End -->
+
+                <!-- Decrement Buttons Start-->
+                <div class="flex row decrement">
+                    <button class="col down bg dec-Hrs disp"><i class="fa-solid fa-minus"></i></button>
+                    <button class="col down bg dec-Min disp"><i class="fa-solid fa-minus"></i></button>
+                    <button class="col down bg dec-Sec disp"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <!-- Decrement Buttons End -->
+
+            <!-- Clock Range -->
+            <div class="range-holder bg">
+                <div class="range"></div>
+            </div>
+            <!-- Clock Range -->
+
+            <!-- Buttons Start -->
+            <div class="controls flex center wrap">
+                <button class="btn start toggle" id="Start">Start</button>
+                <button class="btn stop toggle" id="Stop">Stop</button>
+                <button class="btn restart disp" id="Restart">Restart</button>
+            </div>
+            <!-- Buttons End -->
+
+            <!-- Alert Checkbox Start -->
+            <div>
+                <input type="checkbox" id="audiocheckBox">
+                <label for="audiocheckBox" class="audiocheckBox flex center">
+                    <div class="flex center">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    Alert On End
+                </label>
+            </div>
+            <!-- Alert Checkbox End -->
+
+            <!-- Footer Start-->
+            <footer class="copyright">
+                <p><a href="https://github.com/Ramprasadmanna" target="_blank">© Ramprasad</a>
+                </p>
+            </footer>
+            <!-- Footer End-->
+        </div>
+    </div>
+
+    <!-- External javaScript Start -->
+    <script src="timerWatch.js"></script>
+    <!-- External javaScript End -->
+
+</body>
+
+</html>

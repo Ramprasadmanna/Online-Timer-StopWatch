@@ -1,0 +1,256 @@
+/* ---------------------------------------Predefined--------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+.remove {
+    transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    transition-property: opacity;
+}
+
+.remove-active {
+    opacity: 0;
+}
+
+body {
+    background-color: #152238;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    user-select: none;
+    /* position: relative; */
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    display: inline-block;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.clock {
+    border: 1px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 470px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 70px;
+
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+
+.min,
+.sec,
+.msec {
+    width: 125px;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffff;
+    padding: 5px 30px;
+    font-size: 20px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.start {
+    background-color: rgba(61, 207, 38, 0.148);
+    border-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+.stop {
+    display: none;
+    background-color: rgb(114, 62, 62);
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.lap-btn {
+    display: none;
+}
+
+.copy-btn {
+    display: none;
+}
+
+table {
+    display: none;
+    margin: 40px auto;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+tr {
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.308);
+    font-weight: 200;
+}
+
+
+th {
+    border-bottom: 2px solid rgba(221, 221, 221, 0.509);
+    padding: 0 25px 10px 25px;
+    font-weight: 400;
+}
+
+td {
+    padding: 10px 25px;
+}
+
+.delete {
+    background: transparent;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.delete:hover {
+    opacity: 1;
+}
+
+.delete:active {
+    transform: scale(0.5);
+}
+
+.copy {
+    display: none;
+}
+
+tr:hover {
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.064);
+}
+
+.input {
+    padding: 0;
+}
+
+.name {
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    font-weight: inherit;
+    text-transform: capitalize;
+}
+
+.name:hover {
+    border: 1px solid rgba(221, 221, 221, 0.509);
+    border-radius: 5px;
+}
+
+.name:focus {
+    outline: none;
+    border: 1px 0px solid rgba(221, 221, 221, 0.509);
+    border-radius: 5px;
+}
+
+
+.minimum {
+    color: rgb(0, 255, 0);
+    background-color: rgba(61, 207, 38, 0.148);
+    font-weight: 300;
+}
+
+
+.max {
+    color: rgb(255, 0, 0);
+    background-color: rgba(207, 38, 38, 0.064);
+    font-weight: 300;
+}
+
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+
+.copyright p:hover {
+    font-weight: 500;
+}
+
+
+@media(Max-width:500px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .clock {
+        width: 300px;
+        font-size: 45px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th {
+        padding: 0 12px 10px 12px;
+    }
+
+    td {
+        padding: 10px 5px;
+    }
+
+    .name {
+        width: 40px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
