@@ -1,4 +1,4 @@
-**Online Stopwatch and Timer Overview**
+# Online Stopwatch and Timer Overview
 
 *Online Stopwatch and Timer Web Application* allows users to utilize both a stopwatch and a timer feature, each with their respective functionalities. The application is built using HTML, CSS, and JavaScript. You can access the application through the following link: [Online Stopwatch and Timer](https://ramprasadmanna.github.io/Online-Timer-StopWatch/).
 
