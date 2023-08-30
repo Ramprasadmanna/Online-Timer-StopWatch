@@ -153,9 +153,11 @@ window.onload = function () {
         document.querySelector(".delete").addEventListener("click", function () {
             var x = this.parentNode.parentNode;
             x.classList.add('remove-active');
-            setTimeout(() => {
-                x.remove();
-            }, 500);
+            x.remove();
+            if (document.querySelectorAll(".delete").length == 0) {
+                console.log("del");
+                tableLap.style.display = "none";
+            }
         })
 
         MinMax(currentLap.innerHTML, laps);
@@ -193,7 +195,6 @@ window.onload = function () {
             diffMin = currentMinutes - prevMin;
         }
 
-        //console.log(diffMin, diffSec, diffMsec)
         var diffTime = ((diffMin < 10 ? "0" + diffMin : diffMin) + " : " + (diffSec < 10 ? "0" + diffSec : diffSec) + " . " + (diffMsec < 10 ? "0" + diffMsec : diffMsec));
         prevMin = minutes;
         prevSec = seconds;
@@ -202,7 +203,6 @@ window.onload = function () {
         return (diffTime);
     }
 
-    //console.log(timeDiff(1, 1, 82))
 
     function MinMax(cTime, Id) {
 
@@ -257,44 +257,4 @@ window.onload = function () {
 
     }
 
-
-    // var deleteOp = false
-    // var deleteInterval = null
-    // function tp() {
-    //     console.log('Clicked');
-    //     var x = this.parentNode.parentNode;
-    //     if (!deleteOp) {
-    //         deleteOp = true
-    //         this.innerHTML = ('<i class="fa-solid fa-rotate-left">')
-    //         var i = 1
-
-    //         deleteInterval = setInterval(function () {
-    //             if (i == 0.0) {
-    //                 clearInterval(deleteInterval);
-    //                 deleteOp = false
-    //                 x.remove();
-    //             }
-
-    //             else {
-    //                 i = parseFloat(i - 0.1).toFixed(1);
-    //                 x.style.opacity = i
-    //                 console.log(i)
-    //             }
-
-
-    //         }, 100)
-    //     }
-
-    //     else {
-    //         deleteOp = false
-    //         console.log("THis Hitted")
-    //         clearInterval(deleteInterval);
-    //         this.innerHTML = ('<i class="fa-solid fa-trash-can"></i>')
-    //         x.style.opacity = 1
-    //     }
-
-
-    //     //this.parentNode.parentNode.remove();
-
-    // }
 }
