@@ -1,59 +1,80 @@
-# Online-Timer-StopWatch
-Online Timer StopWatch Made Using Html Css Js
+**Online Stopwatch and Timer Overview**
 
-Link To This Site : https://ramprasadmanna.github.io/Online-Timer-StopWatch/
+*Online Stopwatch and Timer Web Application* allows users to utilize both a stopwatch and a timer feature, each with their respective functionalities. The application is built using HTML, CSS, and JavaScript. You can access the application through the following link: [Online Stopwatch and Timer](https://ramprasadmanna.github.io/Online-Timer-StopWatch/).
 
+The application consists of three main pages:
 
-- Online-Timer-StopWatch is made using Html Css js
-- Made Responsive For all Devices
+1. **Home Page**
+   - The home page acts as the main navigation hub for users to choose between using the stopwatch or timer feature.
+   - Users can select either the Stopwatch or Timer option to proceed to their desired functionality.
 
-# Main Page
+   ![Alt text](Images/image.png)
 
-- Laptop View
+2. **Stopwatch Page**
+   - The Stopwatch page displays a real-time stopwatch.
 
-![image](https://user-images.githubusercontent.com/97107928/221424637-35e4a93e-6b16-4c3f-897f-deca5d7629c5.png)
+   ![Alt text](Images/image-1.png)
 
-- Mobile View
+   - It has the following features:
+     - **Start**: Click the "Start" button to start the stopwatch.
 
-![image](https://user-images.githubusercontent.com/97107928/221425553-b09987a3-4233-4ed4-a7a2-427de4902fc7.png)
+     ![Alt text](Images/image-2.png)
 
+     - **Stop**: Click the "Stop" button to pause the stopwatch.
 
-# Features Of Timer
-- Increment And Decrement Numbers to Set Timer.
-- Alert On End Feature To Make an Alert on End of Timer.
-- Range Slider Changes According To Timer
+     ![Alt text](Images/image-3.png)
 
-- Laptop View
+     - **Lap**: Click the "Lap" button to record a lap time. Lap times are displayed below the stopwatch.
 
-![image](https://user-images.githubusercontent.com/97107928/221424102-6e8c584f-09e3-4880-9051-3c3d4981c52b.png)
-
-- Mobile View
-
-![image](https://user-images.githubusercontent.com/97107928/221425642-0515baca-719f-40f1-9b66-2a907f44268e.png)
+     ![Alt text](Images/image-4.png)
 
 
-# Features Of Stop Watch
-- Alerting Sound On Start And Lap Button.
-- Lap Button Laps All the Time.
-- Laps Make Work Easy with the feature of minimum and maximum lap time by defining them a color Red and Green.
-- Lap Has a Text Box To Make Note on every Laps.
-- Lap has a Remove Button To Delete Laps
+     - **Reset**: Click the "Reset" button to reset the stopwatch and clear all recorded lap times.
 
-- Laptop View
+     ![Alt text](Images/image-5.png)
 
-![image](https://user-images.githubusercontent.com/97107928/221424126-7a80e31f-12e0-4062-8ef3-76992ce965d1.png)
+     - **Note**: Users can write a small note for each lap, which is displayed alongside the lap time.
 
-- Laps Feature
+     ![Alt text](Images/image-6.png)
 
-![image](https://user-images.githubusercontent.com/97107928/221425290-40050877-1b0d-4786-b918-303b3395bae3.png)
+     - **Highlighting**: The fastest lap is highlighted in green, and the slowest lap is highlighted in red.
 
-- Mobile View
+     ![Alt text](Images/image-7.png)
+   
+3. **Timer Page**
+   - The Timer page allows users to set a specific countdown time.
 
-![image](https://user-images.githubusercontent.com/97107928/221425800-6e26d02b-3d49-4ff1-9872-665cabc3951c.png)
+   ![Alt text](Images/image-8.png)
 
-# Hope You Liked The Project 🥳
+   - It offers the following functionalities:
+     - **Set Time**: Input the desired countdown time in hours, minutes, and seconds.
+
+     ![Alt text](Images/image-9.png)
+
+     - **Start**: Click the "Start" button to begin the countdown.
+
+     ![Alt text](Images/image-10.png)
 
 
+     - **Pause**: Click the "Pause" button to pause the countdown.
+
+     ![Alt text](Images/image-11.png)
+
+     - **Resume**: Click the "Resume" button to resume the countdown from where it was paused.
+     
+     ![Alt text](Images/image-12.png)
 
 
+     - **Reset**: Click the "Reset" button to stop the timer and reset it to the initially set time.
 
+     ![Alt text](Images/image-13.png)
+
+     - **Alert**: When the countdown reaches zero, an alert is triggered to notify the user.
+
+     ![Alt text](Images/image-14.png)
+     ![Alt text](Images/image-15.png)
+
+
+The application is designed to be responsive and functional across various screen sizes and devices, ensuring a smooth user experience.
+
+We hope you find this application useful for your timing needs!
